@@ -57,3 +57,71 @@ CREATE TABLE students (
 
 5. **Start the server**
 npm start
+
+How to Run
+
+Start your MySQL server
+
+Run the project:
+
+npm run start
+
+
+Test endpoints using Postman, Insomnia, or cURL
+
+ API Endpoints
+Health Check
+
+GET /api/health
+Returns server and database status.
+
+Students
+
+GET /api/students → get all students
+
+GET /api/students/:id → get student by ID
+
+POST /api/students → create new student
+
+{
+  "name": "Juan Dela Cruz",
+  "email": "juan@example.com",
+  "course": "BSIT",
+  "year_level": 2
+}
+
+
+PUT /api/students/:id → update student by ID
+
+DELETE /api/students/:id → delete student by ID
+
+Courses
+
+GET /api/courses → get all courses
+
+GET /api/courses/:id → get course by ID
+
+POST /api/courses → create new course
+
+{
+  "code": "IS101",
+  "title": "Introduction to IS",
+  "units": 3
+}
+
+
+PUT /api/courses/:id → update course by ID
+
+DELETE /api/courses/:id → delete course by ID
+
+ Tech Stack
+
+Node.js
+
+Express.js
+
+MySQL
+
+dotenv
+
+CORS
